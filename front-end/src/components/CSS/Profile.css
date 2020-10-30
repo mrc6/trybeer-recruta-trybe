@@ -1,0 +1,36 @@
+.profile-edit img {
+  width: 100%;
+  max-width: 200px;
+ 
+}
+
+.profile-edit {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Questrial';
+}
+
+.profile-edit input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  outline: none;
+  font-size: 1em;
+}
+
+.profile-page {
+  height: 100vh;
+}
+
+.column-input {
+  width: 50%;
+  max-width: 300px;
+}
+
+.column-input input {
+  width: 100%;
+  font-family: 'Questrial';
+}

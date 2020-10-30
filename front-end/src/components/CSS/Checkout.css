@@ -1,0 +1,157 @@
+.addressButton {
+  align-self: center;
+  background-color: #16F29E;
+  border-radius: 2px 2px 16px 16px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  height: 43px;
+  margin: 3px;
+  max-width: 400px;
+  width: 96%;
+}
+
+.addressForm {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+}
+
+.beerCard {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 40%;
+  justify-content: space-between;
+}
+
+.beerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: 70%;
+}
+
+.beerContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 80%;
+}
+
+.checkout-botton {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.checkoutButton {
+  align-self: center;
+  background-color: #096642;
+  border-radius: 2px 2px 16px 16px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  height: 43px;
+  margin: 3px;
+  max-width: 400px;
+  width: 96%;
+}
+
+.checkoutCard {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.checkoutPage {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 100vh;
+}
+
+.deleteButton {
+  background-color: white;
+  color: #0E9E67;
+}
+
+.description {
+  width: 45vw;
+}
+
+.fieldSetx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.h2 {
+  height: 5vh;
+}
+
+.imgWidth {
+  height: 15vh;
+  width: auto;
+}
+
+.input {
+  align-self: center;
+  width: 96%;
+}
+
+.label {
+  align-self: flex-start;
+}
+
+.deleteButton  {
+  height: auto;
+  max-width: 25px;
+  width: 5vw;
+  border-style: none;
+}
+
+.deleteButton img{
+  width: 22px;
+}
+
+.imgDiv {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+}
+
+.total {
+  height: 5vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .beerCard {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  .beerContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+}

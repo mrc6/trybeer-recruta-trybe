@@ -1,0 +1,14 @@
+p {
+  margin: 0;
+}
+
+a, button {
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+button:disabled {
+  transform: scale(0.9);
+  opacity: 0.2;
+}

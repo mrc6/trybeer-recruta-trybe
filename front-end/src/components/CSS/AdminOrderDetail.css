@@ -1,0 +1,30 @@
+.btn {
+  align-self: center;
+  background-color: #096642;
+  border-radius: 2px 2px 16px 16px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  height: 43px;
+  margin: 3px;
+  width: 96%;
+}
+
+.list-container {
+  border: 1px black solid;
+  padding: 3%;
+  text-align: center;
+}
+
+.orderContainer {
+  display: flex;
+  width: 100%;
+}
+
+.orderDetailCard {
+  border: white 1px solid;
+  font-family: "Indie Flower", cursive;
+  max-width: 600px;
+  overflow: scroll;
+  width: 100%;
+}

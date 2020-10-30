@@ -1,0 +1,119 @@
+.register-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  animation: animateRegister 1s linear;
+}
+
+.register-main h1 {
+  color: #15E695;
+  font-family: 'Josefin Sans';
+  letter-spacing: 2px;
+}
+
+.register-main h1 {
+  text-align: center;
+  font-size: calc(2vw + 26px);
+}
+
+.fieldsetandspan fieldset {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  justify-content: flex-end;
+  width: 80%;
+  margin: auto;
+  max-width: 400px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: 'Questrial';
+  min-height: 70vh;
+}
+
+.fieldsetandspan fieldset > span {
+  font-size: 0.5em;
+  margin-bottom: 3px;
+}
+
+.fieldsetandspan fieldset > input {
+  border: 0;
+  border-bottom: 1px solid #096642;
+  margin: 10px 0;
+  width: 100%;
+  outline: none;
+}
+
+.fieldsetandspan fieldset button {
+  height: 50px;
+  width: 50%;
+  border-radius: 40px;
+  margin: auto;
+  background: #12CC85;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 1), -2px -2px 12px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  max-width: 200px;
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Questrial';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fieldsetandspan {
+  margin-bottom: 20px
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  outline: none;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #262625; 
+  box-sizing: border-box;
+  transition: 0.5s;
+
+}
+
+.fieldsetandspan fieldset input:checked[type="checkbox"]:before {
+  border-left: none;
+  border-top: none;
+  width: 10px;
+  border-color: #0f0;
+  transform: rotate(45deg)
+}
+
+
+@keyframes animateRegister {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

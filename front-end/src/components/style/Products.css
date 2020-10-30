@@ -1,0 +1,159 @@
+.card-products {
+  display: flex;
+  margin: 5px 5px;
+  text-align: center;
+  width: 176px;
+  background-color: rgb(250, 250, 250);
+  justify-content: space-around;
+  padding-right: 10px;
+  border: 1px solid black;
+  transform: scaleZ(1);
+  opacity: 0;
+  transition: 0.5s linear;
+  animation: animatecard 1s linear forwards;
+}
+
+.card-products:hover {
+  /* transition-duration: 0.2s; */
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 4px 4px black;
+  transform: scaleZ(1.1)
+}
+
+.img-products {
+  height: 150px;
+  max-width: 120px;
+}
+
+.render-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 40px;
+}
+
+.search-input input{
+  height: 50px;
+  border-radius: 40px;
+  position: absolute;
+  right: 0px;
+  width: 50px;
+  transition: 0.5s;
+  outline: none;
+  font-size: 1.5em;
+}
+
+.search-input img {
+  width: 30px;
+  position: absolute;
+  right: 0;
+  background: #12CC85;
+  border-radius: 50%;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 30px;
+}
+
+.search-input:hover input {
+  width: 150px;
+  padding-left: 10px;
+}
+
+.orderer {
+  display: flex;
+  align-items: center;
+}
+
+.orderer select {
+  height: 40px;
+  width: 150px;
+  outline: none;
+  background: #12CC85;
+  border-radius: 30px;
+  margin-left: 10px;
+
+}
+
+.filters {
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+
+.btn-minus {
+  border-style: none;
+  height: 30px;
+  margin: 3px;
+  background-color: #096642;
+  border-radius: 0px 0px 12px 12px;
+  color: white;
+}
+
+.btn-plus {
+  border-style: none;
+  height: 30px;
+  margin: 3px;
+  background-color: #096642;
+  border-radius: 12px 12px 0px 0px;
+  color: white;
+}
+
+.btn-cart {
+  position: static;
+  display: flex;
+  justify-content: center;  
+}
+
+.buttons {
+  align-self: center;
+}
+
+.qtd-basket {
+  margin: 7px;
+}
+.details-product {
+  align-self:  flex-end;
+}
+
+.product-price {
+  color: #0E9E67;
+}
+
+.title-product {
+  font-family: "Indie Flower", cursive;
+}
+
+@media screen and (max-width: 400px) {
+  .filters {
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .orderer {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-products {
+    justify-content: space-around;
+    width: 100%;
+    padding: 18px;
+  }
+  .card-products:hover {
+    box-shadow: none;
+  }
+}
+
+@keyframes animatecard {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

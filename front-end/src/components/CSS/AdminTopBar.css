@@ -1,0 +1,15 @@
+.title {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 5vh;
+  font-weight: 900;
+  text-align: center;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: center;
+  background-color: #12cc85;
+  height: 10vh;
+  margin: 0;
+}
