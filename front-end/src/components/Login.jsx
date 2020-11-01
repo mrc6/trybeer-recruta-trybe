@@ -2,31 +2,27 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import './CSS/Login.css';
-import trybe from '../img/trybe.png'
+import logo from '../img/irish.png'
 import beer from '../img/green-beer.png'
 
 const doLogin = (password, email, setMessage, setRedirectToHome, setRedirectToAdminHome) => {
-  // console.log('teste')
   axios.post('http://localhost:3001/login', { password, email })
     .then(({
       data: {
         token, name, email: _email, role,
       },
     }) => {
-      // console.log(name)
       localStorage.setItem('user', JSON.stringify({
         token, name, email: _email, role,
       }));
       return (role === 'administrator') ? setRedirectToAdminHome(true) : setRedirectToHome(true);
     })
     .catch((err) => ((err.response) ? setMessage(err.response.data.message) : setMessage('Servidor desligado')));
-  // axios.get('/teste').then((data) => {console.log(data)})
 };
 
 const verifyInput = (email, password, setDisabled) => {
   const minLenght = 4;
   const regex = /^\S+@\S+$/;
-  // console.log(email, password)
   if ((email.match(regex)) && (password.length > minLenght)) { setDisabled(false); }
 };
 
@@ -41,7 +37,7 @@ function Login() {
   return (
     <div className="login-page">
       <div className="visible-area">
-        <div className="logo"> <span>TR</span><img src={trybe} width="50px" /><span>BEER</span></div>
+        <div className="logo"><img src={logo} width="150px" /></div>
         <img className="beer" src={beer} width="200px" />
         <div className="login-form">
           <div>

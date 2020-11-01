@@ -28,3 +28,16 @@
   overflow: scroll;
   width: 100%;
 }
+
+
+@media (max-width: 500px) {
+  td {
+    font-size: 0.75rem;
+  }
+  .side-bar a {
+    font-size: 1.2rem;
+  }
+  .divTitle {
+    font-size: 1.4rem;
+  }
+}

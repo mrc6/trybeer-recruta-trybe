@@ -222,13 +222,13 @@ const Checkout = () => {
               <span data-testid={`${i}-product-qtd-input`}>{e.quantity}</span>
               {' '}
               <span data-testid={`${i}-product-name`}>{e.name}</span>
-              <br />
+  
               <span
                 data-testid={`${i}-product-unit-price`}
               >
                 {`(R$ ${e.price.toFixed(2).replace('.', ',')} un)`}
               </span>
-              <br />
+  
               <span
                 data-testid={`${i}-product-total-value`}
               >
@@ -253,7 +253,7 @@ const Checkout = () => {
             totalPrice.toFixed(2).replace('.', ',')
           }
         </span>
-      </div><br />
+      </div>
       </div>
       <div className="checkout-botton">
       <div className="addressForm">
@@ -268,7 +268,6 @@ const Checkout = () => {
             value={deliveryAddress}
             onChange={(e) => setDeliveryAddress(e.target.value)}
           />
-          <br />
           <label htmlFor="delivery_number">Número da casa</label>
           <input
             class=".input" 
@@ -278,7 +277,6 @@ const Checkout = () => {
             value={deliveryNumber}
             onChange={(e) => setDeliveryNumber(e.target.value)}
           />
-          <br />
           <label htmlFor="delivery_district">Bairro</label>
           <input
             class=".input"
@@ -287,7 +285,6 @@ const Checkout = () => {
             value={deliveryDistrict}
             onChange={(e) => setDeliveryDistrict(e.target.value)}
           />
-          <br />
           <label htmlFor="city">Cidade</label>
           <input
             class=".input"
@@ -296,7 +293,6 @@ const Checkout = () => {
             value={deliveryCity}
             onChange={(e) => setDeliveryCity(e.target.value)}
           />
-          <br />
           <button className="addressButton" onClick={() => setAddressField()}>Usar Endereço cadastrado</button>
           <button
             type="button"
@@ -312,7 +308,6 @@ const Checkout = () => {
           >
             Finalizar Pedido
           </button>
-          <br />
         </div>
       </div>
       <div><h3 style={{ color: '#ff0000' }}>{message}</h3></div>

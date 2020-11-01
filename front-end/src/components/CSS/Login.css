@@ -22,11 +22,13 @@
 
 .visible-area {
   animation: animateLogin 1s linear;
+  align-items: center;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+  width: 300px;
   position: relative;
   padding: 10px 20px;
   border-radius: 20px;
@@ -37,6 +39,15 @@
 
 .login-page div > img {
   display: inline;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 300px;
 }
 
 .login-page > div:nth-child(2){
@@ -154,19 +165,16 @@ opacity: 1;
 }
 
 @media (max-width: 400px) {
-  .logo img {
-    height: 40px;
-    width: 40px;
-  }
   .login-page div > span {
     font-size: 3em;
     text-align: center;
   }
-  .logo {
-    text-align: center;
+  .logo img {
+    width: 80%;
   }
   .visible-area {
     width: 80%;
+    min-width: 300px;
   }
 
   .login-form {

@@ -114,7 +114,7 @@ function Products() {
   const { token } = JSON.parse(localStorage.getItem('user')) || {};
 
   useEffect(() => {
-    setTitle('TryBeer');
+    setTitle('The Irish Store');
     instance.get('/profile', { headers: { Authorization: token } }).catch(() => setRedirectLogin(true));
     instance.get('/products')
       .then(({ data }) => { setDataApi(data); setAllProducts(data); });
@@ -143,11 +143,11 @@ function Products() {
                <p className="cart-mobile" data-testid="checkout-bottom-btn-value">{`R$ ${cartInStorage(newCart).toFixed(2).replace('.', ',')}`}</p>
               </Link>
             </button>
-          : <button className="see-cart" type="button" data-testid="checkout-bottom-btn"><Link to="/checkout">Ver Carrinho
+          : <button className="see-cart" type="button" data-testid="checkout-bottom-btn"><Link to="/checkout">Ver Carrinho <p className="cart-mobile" data-testid="checkout-bottom-btn-value">{`R$ ${cartInStorage(newCart).toFixed(2).replace('.', ',')}`}</p>
           </Link>
           </button>
         }
-        <p className="cart-mobile" data-testid="checkout-bottom-btn-value">{`R$ ${cartInStorage(newCart).toFixed(2).replace('.', ',')}`}</p>
+        {/* <p className="cart-mobile" data-testid="checkout-bottom-btn-value">{`R$ ${cartInStorage(newCart).toFixed(2).replace('.', ',')}`}</p> */}
       </div>
     </div>
   );
